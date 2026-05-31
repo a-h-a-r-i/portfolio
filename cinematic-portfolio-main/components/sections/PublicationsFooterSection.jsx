@@ -28,7 +28,7 @@ const MOBILE_SOCIAL_ICONS = {
   LinkedIn:  <FaLinkedinIn  size={20} />,
   Instagram: <FaInstagram size={20} />,
 }
-const HERO_SOCIAL_LABELS = ['LinkedIn']
+const HERO_SOCIAL_LABELS = ['GitHub', 'LinkedIn', 'Instagram']
 
 const VID_VERT = `
   varying vec2 vUv;
@@ -334,7 +334,7 @@ export default function PublicationsFooterSection() {
         {/* ── Mobile background image (footer phase - mobile only) ── */}
         <div className={styles.mobileFooterBg}>
           <Image
-            src="/assets/jyoti-footer.jpeg"
+            src="/assets/mobile-footer.webp"
             alt=""
             fill
             quality={100}
