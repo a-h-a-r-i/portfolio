@@ -1,1 +1,1 @@
-export const SITE_URL = 'https://harinadh-ayyapureddi-portfolio.vercel.app'
+export const SITE_URL = 'https://portfolio-a-h-a-r-is-projects.vercel.app'
