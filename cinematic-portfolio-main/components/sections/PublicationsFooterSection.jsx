@@ -298,7 +298,6 @@ export default function PublicationsFooterSection() {
           videoEl.pause()
           videoEl.currentTime = 0
         }
-      }
 
       // ── Footer text fades in ──────────────────────────────
       // Desktop only since mobile returned early
