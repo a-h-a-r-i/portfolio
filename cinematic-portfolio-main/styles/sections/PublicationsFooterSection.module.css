@@ -793,8 +793,8 @@
   .list::before {
     content: '';
     position: absolute;
-    left: calc(1.4rem + 17px); /* padding-left + half dot */
-    top: -2.5rem; /* Extends up to connect to header/previous section */
+    left: calc(1.4rem + 16px); /* padding-left + half dot width (17px) - half line width (1px) */
+    top: 1.5rem; /* Start exactly at the first number so it doesn't cross the title text */
     bottom: 0;
     width: 2px;
     background: linear-gradient(
@@ -804,7 +804,7 @@
       transparent 100%
     );
     box-shadow: 0 0 8px rgba(247,147,30,0.2);
-    z-index: 1;
+    z-index: 0;
   }
 
   .item {
@@ -816,6 +816,7 @@
     border-top: none;
     text-decoration: none;
     position: relative;
+    z-index: 2; /* Ensures item and number background stay above the connecting line */
   }
 
   .item:first-child { border-top: none; }
@@ -873,8 +874,6 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    border-left: 2px solid rgba(247,147,30,0.25);
-    padding-left: 0.6rem;
     margin-top: 0.2rem;
   }
 
