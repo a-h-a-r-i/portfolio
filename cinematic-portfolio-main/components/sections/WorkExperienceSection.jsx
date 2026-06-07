@@ -8,6 +8,11 @@ import styles from '@/styles/sections/WorkExperienceSection.module.css'
 
 const EXPS = profile.experience
 
+function isMobileDevice() {
+  if (typeof window === 'undefined') return false
+  return window.innerWidth < 768
+}
+
 export default function WorkExperienceSection() {
   const sectionRef        = useRef(null)
   const lineRef           = useRef(null)
@@ -152,12 +157,14 @@ export default function WorkExperienceSection() {
                   <ul
                     ref={el => { bulletListRefs.current[i] = el }}
                     className={styles.bullets}
+                    style={typeof window !== 'undefined' && window.innerWidth < 768 ? { display: 'none' } : {}}
                   >
                     {exp.bullets.map((b, bi) => (
                       <li key={bi} className={styles.bullet}>{b}</li>
                     ))}
                   </ul>
-                  <div className={styles.stack}>
+                  <div className={styles.stack}
+                    style={typeof window !== 'undefined' && window.innerWidth < 768 ? { display: 'none' } : {}}>
                     {exp.tech.map(t => (
                       <span key={t} className={styles.tag}>{t}</span>
                     ))}

@@ -796,35 +796,37 @@
     -webkit-box-orient: vertical;
   }
 
-  /* Interstitial - stack vertically on mobile to prevent overlap */
+  /* Interstitial - top half = location info, bottom half = stats */
   .interstitialLeft {
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translateX(-50%);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
-    gap: 2rem;
+    text-align: center;
+    gap: 1.5rem;
   }
   .interstitialRight {
     position: absolute;
-    top: 50%;
+    bottom: 18%;
     left: 50%;
-    transform: translate(-50%, 30%);
+    transform: translateX(-50%);
     display: flex;
     right: unset;
     flex-direction: row;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
+    gap: 2rem;
   }
-  .interstitialBottom { display: flex; bottom: 2rem; }
-  .interBig    { font-size: clamp(0.9rem, 4.5vw, 1.3rem); }
-  .interCount  { font-size: clamp(1.4rem, 7vw, 2.2rem); }
+  .interstitialBottom { display: none; }
+  .interBig    { font-size: clamp(0.85rem, 4vw, 1.2rem); text-align: center; }
+  .interCount  { font-size: clamp(1.6rem, 8vw, 2.4rem); }
   .interNumLabel { font-size: 0.52rem; text-align: center; }
-  .interLabel  { font-size: 0.55rem; }
+  .interLabel  { font-size: 0.52rem; text-align: center; }
   .interDividerH { display: none; }
-  .interDividerV { display: none; }
+  .interDividerV { width: 1px; height: 2rem; background: rgba(255,255,255,0.15); align-self: center; }
 
   /* Footer */
   .footerContent {
