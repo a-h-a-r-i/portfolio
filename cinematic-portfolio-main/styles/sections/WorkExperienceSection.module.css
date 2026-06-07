@@ -262,7 +262,6 @@
   white-space: nowrap;
 }
 
-/* ── Mobile (≤767px) ────────────────────────────── */
 @media (max-width: 767px) {
   .section {
     height: 100vh;
@@ -271,18 +270,50 @@
   }
 
   .header {
-    padding: 2.2rem clamp(1rem, 4vw, 1.5rem) 0;
+    padding: 1.8rem clamp(1rem, 4vw, 1.5rem) 0;
+  }
+
+  /* Publications section - fit all 6 in one screen */
+  .pubHero { padding: 2rem 1.25rem 0; }
+  .label   { font-size: 0.55rem; }
+  .heading { font-size: clamp(1.3rem, 6.5vw, 1.8rem); }
+  .divider { margin: 0.3rem 1.25rem 0; }
+
+  .list {
+    flex: 1;
+    justify-content: space-evenly;
+    gap: 0;
+    overflow: hidden;
+    padding: 0 1.25rem 0.5rem;
+  }
+
+  .item {
+    grid-template-columns: 1.8rem minmax(0, 1fr);
+    gap: 0.4rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.1rem;
+  }
+  .itemRight { display: none; }
+  .num       { font-size: 0.72rem; }
+  .title     { font-size: 0.7rem; }
+  .desc      {
+    font-size: 0.63rem;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
   }
 
   .labelLeft  { font-size: 0.55rem; }
   .labelRight { font-size: 0.55rem; }
 
   .timeline {
-    justify-content: flex-start;
-    padding-top: 0.7rem;
+    flex: 1;
+    justify-content: space-evenly;
+    padding-top: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     overflow: hidden;
   }
 
@@ -290,7 +321,9 @@
 
   .entries {
     flex-direction: column;
-    gap: 0.6rem;
+    justify-content: space-evenly;
+    height: 100%;
+    gap: 0;
   }
 
   .entry {

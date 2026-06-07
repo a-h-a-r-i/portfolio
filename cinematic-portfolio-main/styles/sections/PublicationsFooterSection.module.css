@@ -765,52 +765,55 @@
 
   /* pubContent has no background - mobileDarkOverlay provides uniform darkness beneath all sections */
 
-  /* Publications */
-  .pubHero { padding: 3.2rem 1.25rem 0; }
-  .label   { font-size: 0.58rem; }
-  .heading { font-size: clamp(1.6rem, 8vw, 2.2rem); }
-  .divider { margin: 0.5rem 1.25rem 0; }
+  /* Publications section - fit all 6 in one screen */
+  .pubHero { padding: 2rem 1.25rem 0; }
+  .label   { font-size: 0.55rem; }
+  .heading { font-size: clamp(1.3rem, 6.5vw, 1.8rem); }
+  .divider { margin: 0.3rem 1.25rem 0; }
 
   .list {
     flex: 1;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     gap: 0;
     overflow: hidden;
     padding: 0 1.25rem 0.5rem;
   }
 
   .item {
-    grid-template-columns: 2rem minmax(0, 1fr);
-    gap: 0.5rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.2rem;
+    grid-template-columns: 1.8rem minmax(0, 1fr);
+    gap: 0.4rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.1rem;
   }
   .itemRight { display: none; }
-  .num       { font-size: 0.85rem; }
-  .title     { font-size: 0.78rem; }
+  .num       { font-size: 0.72rem; }
+  .title     { font-size: 0.7rem; }
   .desc      {
-    font-size: 0.72rem;
+    font-size: 0.63rem;
     -webkit-line-clamp: 1;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
   }
 
-  /* Interstitial - top half = location info, bottom half = stats */
+  /* Interstitial - top = location, bottom = stats, no overlap */
   .interstitialLeft {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
     text-align: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
+    width: 90%;
   }
+  .interStat { align-items: center; }
   .interstitialRight {
     position: absolute;
-    bottom: 18%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -818,13 +821,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    width: 90%;
   }
+  .interNum { align-items: center; flex-direction: column; gap: 0.3rem; }
   .interstitialBottom { display: none; }
-  .interBig    { font-size: clamp(0.85rem, 4vw, 1.2rem); text-align: center; }
-  .interCount  { font-size: clamp(1.6rem, 8vw, 2.4rem); }
-  .interNumLabel { font-size: 0.52rem; text-align: center; }
-  .interLabel  { font-size: 0.52rem; text-align: center; }
+  .interBig    { font-size: clamp(0.85rem, 4vw, 1.1rem); text-align: center; }
+  .interCount  { font-size: clamp(1.2rem, 6vw, 1.8rem); }
+  .interNumLabel { font-size: 0.5rem; text-align: center; }
+  .interLabel  { font-size: 0.5rem; text-align: center; letter-spacing: 0.2em; }
   .interDividerH { display: none; }
   .interDividerV { width: 1px; height: 2rem; background: rgba(255,255,255,0.15); align-self: center; }
 
