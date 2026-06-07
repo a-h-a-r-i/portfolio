@@ -763,19 +763,19 @@
   .imageWrap { display: none; }
   .sticky { height: 100svh; min-height: -webkit-fill-available; }
 
-  /* Publications section - clean list, all 6 fit in one screen */
+  /* Publications section - premium vertical card list matching desktop style */
   .pubContent {
     position: absolute;
     inset: 0;
     display: flex;
     flex-direction: column;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0,0,0,0.6);
   }
   .watermark   { display: none; }
-  .pubHero     { padding: 2.2rem 1.2rem 0; flex-shrink: 0; }
-  .label       { font-size: 0.55rem; }
-  .heading     { font-size: clamp(1.4rem, 7vw, 2rem); }
-  .divider     { margin: 0.5rem 1.2rem 0; flex-shrink: 0; }
+  .pubHero     { padding: 2.5rem 1.4rem 0; flex-shrink: 0; }
+  .label       { font-size: 0.58rem; letter-spacing: 0.24em; }
+  .heading     { font-size: clamp(1.5rem, 7.5vw, 2.2rem); }
+  .divider     { margin: 0.6rem 1.4rem 0; flex-shrink: 0; }
 
   .list {
     flex: 1;
@@ -784,23 +784,50 @@
     justify-content: space-evenly;
     gap: 0;
     overflow: hidden;
-    padding: 0.2rem 1.2rem 1.5rem;
+    padding: 0.3rem 1.4rem 1.5rem;
   }
 
   .item {
     display: grid;
-    grid-template-columns: 1.6rem minmax(0, 1fr);
-    gap: 0.6rem;
-    align-items: center;
-    padding: 0.4rem 0;
-    border-top: 1px solid rgba(255,255,255,0.07);
+    grid-template-columns: 2rem minmax(0,1fr);
+    gap: 0.7rem;
+    align-items: start;
+    padding: 0.5rem 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    text-decoration: none;
   }
+
   .itemRight  { display: none; }
-  .num        { font-size: 0.7rem; }
-  .title      { font-size: 0.78rem; }
-  .platform   { font-size: 0.55rem; padding: 0.06rem 0.32rem; }
-  .desc       {
-    font-size: 0.65rem;
+
+  .num {
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.18);
+    font-family: var(--font-geist-mono), monospace;
+    padding-top: 0.1rem;
+  }
+
+  .itemBody   { gap: 0.2rem; }
+
+  .itemTop    { gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+
+  .title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.01em;
+  }
+
+  .platform {
+    font-size: 0.55rem;
+    padding: 0.07rem 0.35rem;
+    letter-spacing: 0.1em;
+  }
+
+  .desc {
+    font-size: 0.68rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.38);
     -webkit-line-clamp: 1;
     overflow: hidden;
     display: -webkit-box;

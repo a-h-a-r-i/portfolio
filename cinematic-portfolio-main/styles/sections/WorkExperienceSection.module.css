@@ -265,17 +265,20 @@
 /* ── Mobile (≤767px) ────────────────────────────── */
 @media (max-width: 767px) {
   .section {
-    height: 100vh;
+    height: auto;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
   }
 
-  .bgImg { opacity: 0.25; }
+  .bgImg { opacity: 0.18; }
+
+  .section::before { display: none; }
 
   .header {
-    padding: 2rem 1.2rem 0;
+    padding: 3rem 1.4rem 0;
     flex-shrink: 0;
   }
 
@@ -286,78 +289,111 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 1rem 1.2rem 2rem;
-    overflow: hidden;
+    justify-content: flex-start;
+    padding: 1.5rem 1.4rem 0;
+    overflow: visible;
   }
 
   .timelineBody {
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
 
-  .snakeLine { display: none; }
+  /* Vertical snake line on left side */
+  .snakeLine {
+    display: block;
+    position: absolute;
+    left: 17px;           /* center of 34px dot */
+    top: 34px;
+    bottom: 0;
+    width: 2px;
+    height: auto;
+    background: linear-gradient(
+      to bottom,
+      var(--accent) 0%,
+      rgba(247,147,30,0.4) 50%,
+      transparent 100%
+    );
+    box-shadow: 0 0 8px rgba(247,147,30,0.2);
+    transform-origin: top center;
+  }
 
   .entries {
-    flex: 1;
     flex-direction: column;
-    justify-content: space-evenly;
     gap: 0;
   }
 
   .entry {
     flex-direction: row;
-    align-items: center;
-    gap: 0.8rem;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 0 2rem 0;
+    position: relative;
   }
 
   .dot {
     flex-shrink: 0;
     width: 34px;
     height: 34px;
+    position: relative;
+    z-index: 2;
   }
 
   .dotNum   { font-size: 0.6rem; }
   .dot::after { display: none; }
 
   .card {
-    padding-top: 0;
-    gap: 0.15rem;
+    padding-top: 0.3rem;
+    gap: 0.4rem;
     flex: 1;
     min-width: 0;
   }
 
-  .cardHead  { gap: 0.3rem; flex-wrap: wrap; }
-  .period    { font-size: 0.62rem; }
-  .typeTag   { font-size: 0.55rem; padding: 0.05rem 0.3rem; }
-  .location  { font-size: 0.58rem; }
-  .company   { font-size: 1rem; margin: 0; letter-spacing: -0.02em; }
-  .role      { font-size: 0.6rem; }
-  .bullets   { display: none; }
-  .stack     { display: none; }
-}
+  .cardHead  { gap: 0.35rem; flex-wrap: wrap; margin-bottom: 0.1rem; }
+  .period    { font-size: 0.65rem; }
+  .typeTag   { font-size: 0.56rem; padding: 0.06rem 0.32rem; }
+  .location  { font-size: 0.6rem; }
 
-/* ── Tablet (768–1023px) ────────────────────────── */
-  .dotNum { font-size: 0.55rem; }
-
-  .dot::after { display: none; }
-
-  .card {
-    padding-top: 0;
-    gap: 0.2rem;
+  .company {
+    font-size: clamp(1.2rem, 5.5vw, 1.6rem);
+    margin: 0.1rem 0 0;
+    letter-spacing: -0.03em;
   }
 
-  .cardHead  { gap: 0.3rem; }
-  .period    { font-size: 0.6rem; }
-  .typeTag   { font-size: 0.52rem; padding: 0.05rem 0.28rem; }
-  .location  { font-size: 0.58rem; }
-  .company   { font-size: 0.88rem; margin: 0; }
-  .role      { font-size: 0.58rem; }
-  .bullets   { display: none; }
-  .stack     { display: none; }
+  .role { font-size: 0.62rem; margin-bottom: 0.3rem; }
+
+  /* Show 2 bullets on mobile */
+  .bullets {
+    display: flex;
+    max-height: none;
+    overflow: visible;
+    padding-left: 0.6rem;
+    border-left: 2px solid rgba(247,147,30,0.25);
+    gap: 0.3rem;
+    margin-top: 0.2rem;
+  }
+
+  .bullet {
+    font-size: 0.72rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .bullet:nth-child(n+3) { display: none; }
+
+  /* Show tech stack tags */
+  .stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 0.4rem;
+  }
+
+  .tag {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.38rem;
+  }
 }
 
 /* ── Tablet (768–1023px) ────────────────────────── */
