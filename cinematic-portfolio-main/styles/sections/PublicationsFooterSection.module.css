@@ -784,78 +784,98 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 0;
-    overflow: hidden;
-    padding: 0.5rem 1.4rem 1rem;
+    overflow: visible;
+    padding: 1.5rem 1.4rem 0;
     position: relative;
   }
 
-  /* Vertical connecting line through all items */
+  /* Vertical connecting line through all items matching Work Experience */
   .list::before {
     content: '';
     position: absolute;
-    left: 2rem;
-    top: 1.5rem;
-    bottom: 1rem;
-    width: 1px;
+    left: calc(1.4rem + 17px); /* padding-left + half dot */
+    top: -2.5rem; /* Extends up to connect to header/previous section */
+    bottom: 0;
+    width: 2px;
     background: linear-gradient(
       to bottom,
       var(--accent) 0%,
-      rgba(247,147,30,0.3) 60%,
+      rgba(247,147,30,0.4) 50%,
       transparent 100%
     );
+    box-shadow: 0 0 8px rgba(247,147,30,0.2);
+    z-index: 1;
   }
 
   .item {
-    display: grid;
-    grid-template-columns: 2.2rem minmax(0,1fr);
-    gap: 0.8rem;
-    align-items: start;
-    padding: 0.55rem 0;
-    border-top: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 0 2rem 0;
+    border-top: none;
     text-decoration: none;
-    flex-shrink: 0;
+    position: relative;
   }
 
   .item:first-child { border-top: none; }
   .itemRight  { display: none; }
 
   .num {
-    font-size: 0.72rem;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(247, 147, 30, 0.4);
+    background: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
     font-weight: 900;
     color: var(--accent);
     font-family: var(--font-geist-mono), monospace;
-    padding-top: 0.1rem;
     position: relative;
-    z-index: 1;
-    background: #080808;
-    width: 1.6rem;
-    text-align: center;
+    z-index: 2;
+    padding: 0;
   }
 
-  .itemBody   { gap: 0.18rem; }
-  .itemTop    { gap: 0.45rem; flex-wrap: wrap; align-items: center; }
+  .itemBody { 
+    flex: 1;
+    min-width: 0;
+    padding-top: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  .itemTop { gap: 0.35rem; flex-wrap: wrap; align-items: center; margin-bottom: 0.1rem; }
 
   .title {
-    font-size: 0.82rem;
+    font-size: clamp(1.2rem, 5.5vw, 1.6rem);
+    margin: 0.1rem 0 0;
+    letter-spacing: -0.03em;
     font-weight: 700;
     color: #fff;
-    letter-spacing: -0.01em;
   }
 
   .platform {
-    font-size: 0.53rem;
+    font-size: 0.56rem;
     padding: 0.06rem 0.32rem;
     letter-spacing: 0.1em;
   }
 
   .desc {
-    font-size: 0.65rem;
-    line-height: 1.45;
-    color: rgba(255,255,255,0.36);
-    -webkit-line-clamp: 1;
+    font-size: 0.72rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.5);
+    -webkit-line-clamp: 2;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    border-left: 2px solid rgba(247,147,30,0.25);
+    padding-left: 0.6rem;
+    margin-top: 0.2rem;
   }
 
   /* Interstitial - stacked normally on mobile */
