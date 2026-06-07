@@ -13,7 +13,7 @@ import ScreenLoader from '@/components/sections/ScreenLoader'
 import profile               from '@/data/profile.json'
 
 // Snap: 0=video 1=hero 2=about 3..4=projects 5=work-exp 6=publications 7=footer (mobile: 6=publications 7=footer)
-const PROJECT_SLIDES = profile.projects.length
+const PROJECT_SLIDES = 2  // only first 2 projects shown in Work section
 const TOTAL          = 7 + PROJECT_SLIDES  // 9
 
 export default function Home() {

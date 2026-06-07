@@ -6,7 +6,7 @@ import { gsap, ScrollTrigger } from '@/lib/gsap'
 import profile from '@/data/profile.json'
 import styles from '@/styles/sections/ProjectsSection.module.css'
 
-const PROJECTS = profile.projects
+const PROJECTS = profile.projects.slice(0, 2)
 
 export default function ProjectsSection() {
   const sectionRef  = useRef(null)
