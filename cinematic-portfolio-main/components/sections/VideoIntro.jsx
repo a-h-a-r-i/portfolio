@@ -124,7 +124,7 @@ export default function VideoIntro() {
 
       {/* 1 - Blurred ambient background */}
       <video
-        src="/assets/hi_i_m_Harinadh_a_full_stacc.mp4"
+        src="/assets/Hi_I_m_Harinadh_a_Full_Stac.mp4"
         autoPlay muted playsInline
         aria-hidden="true"
         className={styles.bgVideo}
@@ -134,7 +134,7 @@ export default function VideoIntro() {
       <video
         ref={videoRef}
         data-testid="intro-video"
-        src="/assets/hi_i_m_Harinadh_a_full_stacc.mp4"
+        src="/assets/Hi_I_m_Harinadh_a_Full_Stac.mp4"
         muted playsInline
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
