@@ -157,14 +157,12 @@ export default function WorkExperienceSection() {
                   <ul
                     ref={el => { bulletListRefs.current[i] = el }}
                     className={styles.bullets}
-                    style={typeof window !== 'undefined' && window.innerWidth < 768 ? { display: 'none' } : {}}
                   >
                     {exp.bullets.map((b, bi) => (
                       <li key={bi} className={styles.bullet}>{b}</li>
                     ))}
                   </ul>
-                  <div className={styles.stack}
-                    style={typeof window !== 'undefined' && window.innerWidth < 768 ? { display: 'none' } : {}}>
+                  <div className={styles.stack}>
                     {exp.tech.map(t => (
                       <span key={t} className={styles.tag}>{t}</span>
                     ))}
