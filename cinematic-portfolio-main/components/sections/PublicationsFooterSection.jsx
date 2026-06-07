@@ -334,7 +334,7 @@ export default function PublicationsFooterSection() {
         {/* ── Mobile background image (footer phase - mobile only) ── */}
         <div className={styles.mobileFooterBg}>
           <Image
-            src="/assets/mobile-footer.webp"
+            src="/assets/walkinghari.png"
             alt=""
             fill
             quality={100}
