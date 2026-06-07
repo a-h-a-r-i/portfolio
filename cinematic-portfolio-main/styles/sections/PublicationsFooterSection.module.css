@@ -763,33 +763,44 @@
   .imageWrap { display: none; }
   .sticky { height: 100svh; min-height: -webkit-fill-available; }
 
-  /* pubContent has no background - mobileDarkOverlay provides uniform darkness beneath all sections */
-
-  /* Publications section - fit all 6 in one screen */
-  .pubHero { padding: 2rem 1.25rem 0; }
-  .label   { font-size: 0.55rem; }
-  .heading { font-size: clamp(1.3rem, 6.5vw, 1.8rem); }
-  .divider { margin: 0.3rem 1.25rem 0; }
+  /* Publications section - clean list, all 6 fit in one screen */
+  .pubContent {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.55);
+  }
+  .watermark   { display: none; }
+  .pubHero     { padding: 2.2rem 1.2rem 0; flex-shrink: 0; }
+  .label       { font-size: 0.55rem; }
+  .heading     { font-size: clamp(1.4rem, 7vw, 2rem); }
+  .divider     { margin: 0.5rem 1.2rem 0; flex-shrink: 0; }
 
   .list {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     gap: 0;
     overflow: hidden;
-    padding: 0 1.25rem 0.5rem;
+    padding: 0.2rem 1.2rem 1.5rem;
   }
 
   .item {
-    grid-template-columns: 1.8rem minmax(0, 1fr);
-    gap: 0.4rem;
-    padding-top: 0.35rem;
-    padding-bottom: 0.1rem;
+    display: grid;
+    grid-template-columns: 1.6rem minmax(0, 1fr);
+    gap: 0.6rem;
+    align-items: center;
+    padding: 0.4rem 0;
+    border-top: 1px solid rgba(255,255,255,0.07);
   }
-  .itemRight { display: none; }
-  .num       { font-size: 0.72rem; }
-  .title     { font-size: 0.7rem; }
-  .desc      {
-    font-size: 0.63rem;
+  .itemRight  { display: none; }
+  .num        { font-size: 0.7rem; }
+  .title      { font-size: 0.78rem; }
+  .platform   { font-size: 0.55rem; padding: 0.06rem 0.32rem; }
+  .desc       {
+    font-size: 0.65rem;
     -webkit-line-clamp: 1;
     overflow: hidden;
     display: -webkit-box;

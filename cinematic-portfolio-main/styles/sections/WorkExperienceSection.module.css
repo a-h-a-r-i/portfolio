@@ -262,82 +262,85 @@
   white-space: nowrap;
 }
 
+/* ── Mobile (≤767px) ────────────────────────────── */
 @media (max-width: 767px) {
   .section {
     height: 100vh;
     min-height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
+
+  .bgImg { opacity: 0.25; }
 
   .header {
-    padding: 1.8rem clamp(1rem, 4vw, 1.5rem) 0;
+    padding: 2rem 1.2rem 0;
+    flex-shrink: 0;
   }
 
-  /* Publications section - fit all 6 in one screen */
-  .pubHero { padding: 2rem 1.25rem 0; }
-  .label   { font-size: 0.55rem; }
-  .heading { font-size: clamp(1.3rem, 6.5vw, 1.8rem); }
-  .divider { margin: 0.3rem 1.25rem 0; }
-
-  .list {
-    flex: 1;
-    justify-content: space-evenly;
-    gap: 0;
-    overflow: hidden;
-    padding: 0 1.25rem 0.5rem;
-  }
-
-  .item {
-    grid-template-columns: 1.8rem minmax(0, 1fr);
-    gap: 0.4rem;
-    padding-top: 0.35rem;
-    padding-bottom: 0.1rem;
-  }
-  .itemRight { display: none; }
-  .num       { font-size: 0.72rem; }
-  .title     { font-size: 0.7rem; }
-  .desc      {
-    font-size: 0.63rem;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-  }
-
-  .labelLeft  { font-size: 0.55rem; }
-  .labelRight { font-size: 0.55rem; }
+  .labelLeft  { font-size: 0.6rem; }
+  .labelRight { font-size: 0.6rem; }
 
   .timeline {
     flex: 1;
-    justify-content: space-evenly;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1.2rem 2rem;
     overflow: hidden;
+  }
+
+  .timelineBody {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .snakeLine { display: none; }
 
   .entries {
+    flex: 1;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
     gap: 0;
   }
 
   .entry {
     flex-direction: row;
-    align-items: flex-start;
-    gap: 0.6rem;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
   }
 
   .dot {
     flex-shrink: 0;
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
   }
 
+  .dotNum   { font-size: 0.6rem; }
+  .dot::after { display: none; }
+
+  .card {
+    padding-top: 0;
+    gap: 0.15rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .cardHead  { gap: 0.3rem; flex-wrap: wrap; }
+  .period    { font-size: 0.62rem; }
+  .typeTag   { font-size: 0.55rem; padding: 0.05rem 0.3rem; }
+  .location  { font-size: 0.58rem; }
+  .company   { font-size: 1rem; margin: 0; letter-spacing: -0.02em; }
+  .role      { font-size: 0.6rem; }
+  .bullets   { display: none; }
+  .stack     { display: none; }
+}
+
+/* ── Tablet (768–1023px) ────────────────────────── */
   .dotNum { font-size: 0.55rem; }
 
   .dot::after { display: none; }
