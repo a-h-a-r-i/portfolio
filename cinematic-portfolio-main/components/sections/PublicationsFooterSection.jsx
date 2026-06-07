@@ -256,13 +256,14 @@ export default function PublicationsFooterSection() {
       const vw = window.innerWidth
 
       if (isMobile) {
-        // Static mobile background - interstitial fades between feature list and footer
-        const interIn  = Math.max(0, Math.min(1, (p - 0.28) / 0.17))
-        const interOut = Math.max(0, Math.min(1, (p - 0.60) / 0.12))
-        gsap.set(interstitialRef.current, { opacity: interIn * (1 - interOut), pointerEvents: 'none' })
+        // Just keep everything fully visible on mobile natively
+        gsap.set(pubContentRef.current, { opacity: 1, pointerEvents: 'auto' })
+        gsap.set(interstitialRef.current, { opacity: 1, pointerEvents: 'auto' })
+        gsap.set(footerContentRef.current, { opacity: 1, pointerEvents: 'auto' })
+        return
+      }
 
-      } else {
-        // ── Phase 2: image shrinks full-width → centered (p 0.12 → 0.65) ──
+      // ── Phase 2: image shrinks full-width → centered (p 0.12 → 0.65) ──
         const imgRaw = Math.max(0, Math.min(1, (p - 0.12) / 0.53))
         const imgP   = easeInOut(imgRaw)
 
@@ -300,9 +301,9 @@ export default function PublicationsFooterSection() {
       }
 
       // ── Footer text fades in ──────────────────────────────
-      // Mobile: p 0.72 → 0.92 | Desktop: p 0.75 → 1.0
-      const footerStart = isMobile ? 0.72 : 0.75
-      const footerRange = isMobile ? 0.20 : 0.25
+      // Desktop only since mobile returned early
+      const footerStart = 0.75
+      const footerRange = 0.25
       const footerFade = Math.max(0, Math.min(1, (p - footerStart) / footerRange))
       gsap.set(footerContentRef.current, { opacity: footerFade, pointerEvents: footerFade > 0.05 ? 'auto' : 'none' })
     }
