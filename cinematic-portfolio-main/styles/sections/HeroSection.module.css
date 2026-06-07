@@ -333,11 +333,16 @@
   .name { white-space: normal; }
 
   .photo {
-    width: 72%;
-    height: 72svh;
+    width: 98%;
+    height: 90svh;
     top: auto;
     bottom: 0;
     right: 0;
+  }
+
+  .photoImg {
+    object-fit: contain;
+    object-position: center bottom;
   }
 
   .stats       { gap: 0.35rem; flex-wrap: wrap; }

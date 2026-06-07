@@ -1,6 +1,6 @@
-# Jyoti Sinha Cinematic Portfolio
+# Harinadh Ayyapureddi Cinematic Portfolio
 
-A customized cinematic Next.js portfolio for Jyoti Sinha, focused on Control-M expertise, production support, enterprise automation, RPA, and AI-assisted support projects.
+A Computer Science student and aspiring Full-Stack Developer with a strong passion for web development, coding, and entrepreneurship. Currently studying at NIAT Hyderabad and pursuing a B.Sc. in Computer Science through BITS Pilani. Focused on building modern web applications, creating innovative solutions, and transforming education through story-based learning. Enthusiastic about JavaScript, Python, HTML, CSS, React, and AI-powered technologies, with the goal of becoming a successful software engineer and entrepreneur.
 
 ## Run locally
 

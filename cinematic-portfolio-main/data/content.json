@@ -3,20 +3,20 @@
     "tagline": "Portfolio 2026"
   },
   "hero": {
-    "taglineHighlight": "Control-M",
-    "freelanceNote": "Open to Control-M, production support, automation, and AI operations opportunities.",
+    "taglineHighlight": "AI-powered",
+    "freelanceNote": "Open to software development, full-stack engineering, and startup opportunities.",
     "availableLabel": "Available for opportunities",
-    "pills": ["Control-M SME", "L3 Production Support", "Agentic AI", "Automation"],
-    "specialistStat": { "value": "Control-M + AI", "label": "Specialist" }
+    "pills": ["Full-Stack Development", "React & Node.js", "Firebase", "AI Integration", "Web Automation"],
+    "specialistStat": { "value": "Full-Stack + AI", "label": "Specialist" }
   },
   "interstitial": {
     "availabilityLabel": "Availability",
     "basedInLabel": "Based in",
-    "statLabels": ["Years\nexperience", "Enterprise\nroles", "AI automation\nprojects"]
+    "statLabels": ["Projects\nbuilt", "Active\nroles", "Full-Stack\n+ AI"]
   },
   "footer": {
-    "eyebrow": "Available for enterprise support and automation",
-    "ctaLines": ["Keeping critical", "workloads resilient"],
-    "ctaAccent": "trusted."
+    "eyebrow": "Available for software development and startup opportunities",
+    "ctaLines": ["Building products", "that make an"],
+    "ctaAccent": "impact."
   }
 }

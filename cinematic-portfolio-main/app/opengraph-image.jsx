@@ -3,7 +3,7 @@ import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
 
-export const alt = 'Jyoti Sinha | Software Engineer'
+export const alt = 'Harinadh Ayyapureddi | Software Engineer'
 
 export const size = {
   width: 1200,
@@ -13,7 +13,7 @@ export const size = {
 export const contentType = 'image/png'
 
 const ACCENT = '#f7931e'
-const photoUrl = `${SITE_URL}/assets/jyoti-about.jpeg`
+const photoUrl = `${SITE_URL}/assets/Hari-about.png`
 
 export default function Image() {
   return new ImageResponse(
@@ -100,7 +100,7 @@ export default function Image() {
                 letterSpacing: -4,
               }}
             >
-              JYOTI
+              HARINADH
             </span>
 
             <span
@@ -111,7 +111,7 @@ export default function Image() {
                 letterSpacing: -4,
               }}
             >
-              SINHA
+              AYYAPUREDDI
             </span>
           </div>
 
@@ -222,7 +222,7 @@ export default function Image() {
             src={photoUrl}
             width={420}
             height={630}
-            alt="Jyoti Sinha"
+            alt="Harinadh Ayyapureddi"
             style={{
               objectFit: 'cover',
             }}
@@ -250,7 +250,7 @@ export default function Image() {
             letterSpacing: 2,
           }}
         >
-          jyoti-sinha-portfolio.vercel.app
+          harinadh-ayyapureddi-portfolio.vercel.app
         </div>
       </div>
     ),

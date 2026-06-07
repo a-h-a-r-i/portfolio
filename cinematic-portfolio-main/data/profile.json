@@ -1,177 +1,213 @@
 {
   "name": {
-    "first": "Jyoti",
-    "last": "Sinha",
-    "full": "Jyoti Sinha"
+    "first": "Harinadh",
+    "last": "Ayyapureddi",
+    "full": "Harinadh Ayyapureddi"
   },
-  "email": "jyotisinha0526@gmail.com",
-  "tagline": "Designing reliable Control-M operations, automation, and AI-assisted support systems.",
-  "description": "Control-M SME and production support specialist with 15+ years across banking, enterprise workload automation, ITSM, RPA, and AI-assisted operations.",
+  "email": "ayyapureddiharinadh@gmail.com",
+  "tagline": "Building scalable web applications, automation systems, and AI-powered solutions for businesses and startups.",
+  "description": "Open to software development, full-stack engineering, and startup opportunities.",
   "roles": {
-    "short": "Software Engineer",
-    "detailed": "Control-M SME | Production L3 Support | Agentic AI Automation"
+    "short": "Full-Stack Developer",
+    "detailed": "Founder @ Orvix Labs | Building AI-Powered Products"
   },
   "location": {
-    "based": "Singapore",
-    "availability": "Singapore / Remote"
+    "based": "Hyderabad, India",
+    "availability": "Remote / On-site"
   },
   "available": true,
-  "bio": "IT professional with 15+ years of experience in Control-M administration, batch workflow design, production support, infrastructure management, automation, and ITIL-led service delivery. Currently supporting enterprise Control-M customers at BMC Software, with deep experience across banking environments, Unix/Linux and Windows platforms, shell scripting, Python, SQL, VBA, UiPath RPA, REST APIs, and AI-assisted support tooling.",
+  "bio": "Computer Science student and aspiring Full-Stack Developer with a strong passion for web development, coding, and entrepreneurship. Currently studying at NIAT Hyderabad and pursuing a B.Sc. in Computer Science through BITS Pilani. Focused on building modern web applications, creating innovative solutions, and transforming education through story-based learning. Enthusiastic about JavaScript, Python, HTML, CSS, React, and AI-powered technologies, with the goal of becoming a successful software engineer and entrepreneur.",
   "stats": [
-    { "value": "15+", "label": "Years Experience" },
-    { "value": "8+", "label": "Enterprise Roles" },
-    { "value": "2", "label": "AI Automation Projects" }
+    { "value": "10+", "label": "Projects Built" },
+    { "value": "3",   "label": "Active Roles" },
+    { "value": "Full-Stack + AI", "label": "Specialist" }
   ],
   "skills": [
-    "Control-M SME",
-    "L2/L3 Support",
-    "Batch Scheduling",
-    "Production Support",
-    "Agentic AI",
-    "Automation",
-    "Unix/Linux",
-    "Shell Scripting",
-    "Python",
-    "SQL",
-    "UiPath RPA",
-    "ITIL",
-    "ServiceNow",
-    "Jira",
-    "RCA",
-    "REST API"
+    "React",
+    "Node.js",
+    "JavaScript",
+    "Firebase",
+    "HTML & CSS",
+    "REST APIs",
+    "Web Automation",
+    "AI Integration",
+    "Vercel",
+    "GitHub",
+    "UI/UX Design",
+    "Python"
   ],
   "experience": [
     {
       "id": 1,
-      "role": "Control-M Staff Technical Analyst",
-      "company": "BMC Software Asia Pacific Pte Ltd",
-      "companyShort": "BMC SOFTWARE",
-      "type": "Full-time",
-      "location": "Singapore",
-      "period": "Nov 2022",
+      "role": "Founder & Software Developer",
+      "company": "Orvix Labs",
+      "companyShort": "ORVIX LABS",
+      "type": "Founder",
+      "location": "Hyderabad, India",
+      "period": "Nov 2024",
       "periodEnd": "Present",
       "bullets": [
-        "Provide Level 2 and Level 3 technical support for Control-M across enterprise Linux, Unix, and Windows environments.",
-        "Advise global customers on Control-M architecture, workload optimization, upgrades, migrations, compatibility, and operational best practices.",
-        "Perform RCA, reproduce customer issues in lab environments, validate fixes, manage escalations to R&D, and publish knowledge articles and videos.",
-        "Built AI-powered Control-M Log Analyzer and Salesforce case follow-up automation to reduce manual investigation and improve support response time."
+        "Founded Orvix Labs and built multiple web applications and digital solutions.",
+        "Designed and developed responsive websites with modern UI/UX.",
+        "Created hostel management, restaurant management, and automation platforms.",
+        "Integrated Firebase authentication, payment gateways, and cloud deployment.",
+        "Focused on scalable solutions and user-friendly experiences."
       ],
-      "desc": "Enterprise Control-M technical support, architecture advisory, RCA, escalation management, upgrade planning, and AI-assisted automation for global customers.",
-      "tech": ["Control-M", "Linux", "Unix", "Windows", "Python", "OpenAI API", "React", "Node.js", "ITSM"]
+      "desc": "Founded Orvix Labs and led development of web applications, management systems, and digital products with modern UI/UX and cloud deployments.",
+      "tech": ["React", "Node.js", "JavaScript", "Firebase", "HTML", "CSS", "Vercel", "GitHub", "API Integration"]
     },
     {
       "id": 2,
-      "role": "Control-M Analyst",
-      "company": "United Overseas Bank (UOB)",
-      "companyShort": "UOB",
-      "type": "Full-time",
-      "location": "Singapore",
-      "period": "Aug 2021",
-      "periodEnd": "Nov 2022",
+      "role": "Club Lead",
+      "company": "NIAT Entrepreneur Club",
+      "companyShort": "NIAT E-CLUB",
+      "type": "Leadership",
+      "location": "NIAT Hyderabad",
+      "period": "Jan 2025",
+      "periodEnd": "Present",
       "bullets": [
-        "Supported Operations & Technology Control-M administration, scheduling, production support, and batch workflow management.",
-        "Automated manual activities using VB scripting, VBA macros, batch scripts, Unix shell scripts, and SQL to improve operational efficiency.",
-        "Implemented LDAP authentication for Control-M access and supported upgrades, migrations, HA setup, DR checks, and production changes.",
-        "Handled incidents, problems, and changes through Remedy, Jira, and ServiceNow while coordinating with application, infrastructure, and business teams."
+        "Led entrepreneurship initiatives and organized innovation activities.",
+        "Mentored students on startup ideas and web development projects.",
+        "Collaborated with teams to transform ideas into real-world solutions.",
+        "Promoted problem-solving and product-building culture."
       ],
-      "desc": "Control-M SME support for banking operations, automation, access management, batch execution, DR verification, and ITIL-aligned service delivery.",
-      "tech": ["Control-M", "Unix", "Shell", "VBA", "SQL", "Remedy", "Jira", "ServiceNow", "AIX"]
+      "desc": "Leading entrepreneurship initiatives, mentoring students on startup ideas, and fostering a culture of innovation and product building at NIAT Hyderabad.",
+      "tech": ["Leadership", "Startup Strategy", "Project Management", "Innovation"]
     },
     {
       "id": 3,
-      "role": "RPA Consultant & Business Analyst",
-      "company": "ABeam Consulting (OCBC Bank)",
-      "companyShort": "ABEAM / OCBC",
-      "type": "Consulting",
-      "location": "Singapore",
-      "period": "Jun 2019",
-      "periodEnd": "Mar 2020",
+      "role": "Web Application Developer",
+      "company": "Freelance Projects",
+      "companyShort": "FREELANCE",
+      "type": "Freelance",
+      "location": "Remote",
+      "period": "Mar 2025",
+      "periodEnd": "Present",
       "bullets": [
-        "Delivered end-to-end UiPath automation solutions for banking operations, reducing manual processing across multiple business processes.",
-        "Gathered requirements with stakeholders and authored BRD, PDD, and SDD documentation for automation delivery.",
-        "Designed workflows with exception handling, screen scraping, data scraping, CSV/Excel outputs, and reliable bot scheduling through UiPath Orchestrator."
+        "Developed custom management systems and business websites.",
+        "Built dashboard interfaces and automation workflows.",
+        "Deployed projects on Vercel and managed version control using GitHub.",
+        "Worked on responsive designs optimized for desktop and mobile devices."
       ],
-      "desc": "RPA delivery and business analysis for card operations, billing, merchant payment processes, and production automation workflows.",
-      "tech": ["UiPath", "RPA", "BRD", "PDD", "SDD", "Excel", "Automation", "Banking"]
-    },
-    {
-      "id": 4,
-      "role": "Control-M Analyst",
-      "company": "Bank of Singapore",
-      "companyShort": "BOS",
-      "type": "Full-time",
-      "location": "Singapore",
-      "period": "May 2018",
-      "periodEnd": "Apr 2019",
-      "bullets": [
-        "Provided end-to-end production support for Control-M failures, workflow development, server management, environment changes, and upgrades.",
-        "Managed Control-M/EM components, agents, calendars, dependencies, post-processing alerts, urgent changes, and weekend implementation roadmaps.",
-        "Worked with teams on RCA, proactive batch cycle analysis, SLA adherence, and production incident reduction across Unix, Windows, and T24 workflows."
-      ],
-      "desc": "Production support and Control-M administration for banking operations, change delivery, workflow design, and incident resolution.",
-      "tech": ["Control-M", "Unix", "Windows", "T24", "RCA", "SLA", "Change Management"]
+      "desc": "Building custom web applications, dashboards, and automation workflows for clients with responsive design and cloud deployment.",
+      "tech": ["React", "Firebase", "JavaScript", "GitHub", "Vercel", "REST APIs", "UI/UX"]
     }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "Log Analyzer",
-      "subtitle": "AI-Powered RCA Assistant",
-      "type": "Agentic AI",
-      "link": "https://ctm-log-analyzer.netlify.app/",
-      "image": "/assets/project-artgenio1.png",
-      "tech": ["React", "Node.js", "OpenAI API", "Prompt Engineering", "Control-M", "Log Analysis"],
-      "desc": "Designed and developed an LLM-powered support tool that analyzes Control-M logs, extracts structured insights from unstructured data, and surfaces probable root causes with actionable troubleshooting steps."
+      "title": "Hostels",
+      "subtitle": "Hostel Management Platform",
+      "type": "Web App",
+      "link": "https://hostels-roan.vercel.app",
+      "image": "/assets/projects/hostels.jpg",
+      "tech": ["React", "Firebase", "Node.js", "Vercel"],
+      "desc": "A modern hostel management platform featuring rent tracking, issue reporting, notices, room allocation, and tenant management."
     },
     {
       "id": 2,
-      "title": "Case Follow-Up Automation",
-      "subtitle": "AI-Driven Support Workflow",
-      "type": "Automation",
-      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7453443679396003840/",
-      "image": "/assets/project-easyfolio1.png",
-      "tech": ["Python", "Salesforce", "SMTP", "AI Automation", "SLA", "Support Ops"],
-      "desc": "Built a Python-based automation system to monitor support cases and trigger intelligent follow-up emails, improving response time, reducing manual effort, and strengthening SLA compliance."
+      "title": "Deals With Hari",
+      "subtitle": "Deals & Promotions Platform",
+      "type": "Web App",
+      "link": "https://dealswithhari.vercel.app",
+      "image": "/assets/projects/dealswithhari.jpg",
+      "tech": ["React", "JavaScript", "Firebase"],
+      "desc": "A deals and promotions platform that helps users discover exclusive offers and discounts."
+    },
+    {
+      "id": 3,
+      "title": "Smart Tambola",
+      "subtitle": "AI-Powered Tambola Assistant",
+      "type": "AI Web App",
+      "link": "https://smart-tambola.vercel.app",
+      "image": "/assets/projects/smart-tambola.jpg",
+      "tech": ["JavaScript", "OCR.js", "HTML", "CSS"],
+      "desc": "An AI-powered Tambola assistant with OCR-based number recognition and automated ticket validation."
+    },
+    {
+      "id": 4,
+      "title": "PhotoBooth",
+      "subtitle": "Digital Photo Booth App",
+      "type": "Web App",
+      "link": "https://photobooth-nine.vercel.app",
+      "image": "/assets/projects/photobooth.jpg",
+      "tech": ["React", "JavaScript", "Camera API"],
+      "desc": "A digital photo booth application for capturing, customizing, and sharing memorable moments with creative effects."
+    },
+    {
+      "id": 5,
+      "title": "Falcon Lead Management",
+      "subtitle": "Sales Lead Tracking Platform",
+      "type": "Web App",
+      "link": "https://falcon-lead-management.vercel.app",
+      "image": "/assets/projects/falcon-lead.jpg",
+      "tech": ["React", "Firebase", "Node.js", "Analytics"],
+      "desc": "A lead management platform for tracking prospects, managing customer interactions, and streamlining sales workflows."
+    },
+    {
+      "id": 6,
+      "title": "Avira Stays",
+      "subtitle": "Hospitality Management Platform",
+      "type": "Web App",
+      "link": "https://avira-stays.vercel.app/",
+      "image": "/assets/projects/avira-stays.jpg",
+      "tech": ["React", "Node.js", "MongoDB"],
+      "desc": "A hospitality management platform designed for property listings, bookings, guest management, and seamless customer experiences."
     }
   ],
   "publications": [
     {
       "id": 1,
-      "title": "Control-M Log Analyzer",
+      "title": "Hostels",
       "platform": "Live Demo",
       "year": "2026",
-      "link": "https://ctm-log-analyzer.netlify.app/",
-      "desc": "An AI-powered log analysis prototype for Control-M support, using LLM workflows to detect likely root causes and generate troubleshooting guidance."
+      "link": "https://hostels-roan.vercel.app",
+      "desc": "A modern hostel management platform featuring rent tracking, issue reporting, notices, room allocation, and tenant management."
     },
     {
       "id": 2,
-      "title": "AI-Driven Salesforce Case Follow-Up",
-      "platform": "LinkedIn",
+      "title": "Deals With Hari",
+      "platform": "Live Demo",
       "year": "2026",
-      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7453443679396003840/",
-      "desc": "A support automation concept using Python and AI-assisted monitoring to improve follow-up discipline, response speed, and SLA adherence."
+      "link": "https://dealswithhari.vercel.app",
+      "desc": "A deals and promotions platform that helps users discover exclusive offers and discounts."
     },
     {
       "id": 3,
-      "title": "Enterprise Control-M Advisory",
-      "platform": "Practice Area",
+      "title": "Smart Tambola",
+      "platform": "Live Demo",
       "year": "2026",
-      "link": "mailto:jyotisinha0526@gmail.com",
-      "desc": "Architecture, sizing, upgrade planning, migration support, compatibility guidance, RCA, and runbook validation for Control-M environments."
+      "link": "https://smart-tambola.vercel.app",
+      "desc": "An AI-powered Tambola assistant with OCR-based number recognition and automated ticket validation."
     },
     {
       "id": 4,
-      "title": "RPA & Process Documentation",
-      "platform": "Practice Area",
+      "title": "PhotoBooth",
+      "platform": "Live Demo",
       "year": "2026",
-      "link": "mailto:jyotisinha0526@gmail.com",
-      "desc": "Business analysis, PDD and SDD creation, UiPath workflow delivery, and production-ready automation design for banking operations."
+      "link": "https://photobooth-nine.vercel.app",
+      "desc": "A digital photo booth application for capturing, customizing, and sharing memorable moments with creative effects."
+    },
+    {
+      "id": 5,
+      "title": "Falcon Lead Management",
+      "platform": "Live Demo",
+      "year": "2026",
+      "link": "https://falcon-lead-management.vercel.app",
+      "desc": "A lead management platform for tracking prospects, managing customer interactions, and streamlining sales workflows."
+    },
+    {
+      "id": 6,
+      "title": "Avira Stays",
+      "platform": "Live Demo",
+      "year": "2026",
+      "link": "https://avira-stays.vercel.app/",
+      "desc": "A hospitality management platform designed for property listings, bookings, guest management, and seamless customer experiences."
     }
   ],
   "socials": [
-    { "label": "GitHub",    "href": "https://github.com/jyotisinha0526/jyotisinha0526" },
-    { "label": "LinkedIn",  "href": "https://www.linkedin.com/in/jyoti-sinha-05349736" },
-    { "label": "Instagram", "href": "https://www.instagram.com/jyotisinha.official" },
-    { "label": "YouTube",   "href": "https://www.youtube.com/@Jyoti.ai.creative" }
+    { "label": "GitHub",    "href": "https://github.com/a-h-a-r-i" },
+    { "label": "LinkedIn",  "href": "https://www.linkedin.com/in/harinadh-ayyapureddi/" },
+    { "label": "Instagram", "href": "https://www.instagram.com/harinadh_ayyapureddy/?hl=en" }
   ]
 }

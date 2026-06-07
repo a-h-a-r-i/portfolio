@@ -16,12 +16,14 @@ function makeSprite() {
   return new THREE.CanvasTexture(c)
 }
 
-// Warm whites + cream - stand out against hero's orange gradient
+// Warm gold/amber - vivid enough to be clearly visible on the orange background
 const PALETTE = [
   new THREE.Color('#ffffff'),
-  new THREE.Color('#fff9f0'),
-  new THREE.Color('#ffe8cc'),
+  new THREE.Color('#fff3cc'),
+  new THREE.Color('#ffe066'),
+  new THREE.Color('#ffcc00'),
   new THREE.Color('#ffd4a0'),
+  new THREE.Color('#ffaa33'),
 ]
 
 function randColor() {
@@ -55,7 +57,7 @@ export default function HeroBackground() {
     const tex = makeSprite()
 
     // ── Layer 1: tiny fast drifters ───────────────────────
-    const N1   = 65
+    const N1   = 120
     const p1   = new Float32Array(N1 * 3)
     const c1   = new Float32Array(N1 * 3)
     const spd1 = new Float32Array(N1)
@@ -76,15 +78,15 @@ export default function HeroBackground() {
     g1.setAttribute('color',    new THREE.BufferAttribute(c1, 3))
 
     const m1 = new THREE.PointsMaterial({
-      size: 0.07, map: tex, vertexColors: true,
-      transparent: true, opacity: 0.7,
+      size: 0.13, map: tex, vertexColors: true,
+      transparent: true, opacity: 0.95,
       depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true,
     })
     const pts1 = new THREE.Points(g1, m1)
     scene.add(pts1)
 
     // ── Layer 2: large soft bokeh blobs ───────────────────
-    const N2   = 22
+    const N2   = 35
     const p2   = new Float32Array(N2 * 3)
     const c2   = new Float32Array(N2 * 3)
     const spd2 = new Float32Array(N2)
@@ -105,12 +107,40 @@ export default function HeroBackground() {
     g2.setAttribute('color',    new THREE.BufferAttribute(c2, 3))
 
     const m2 = new THREE.PointsMaterial({
-      size: 0.55, map: tex, vertexColors: true,
-      transparent: true, opacity: 0.15,
+      size: 1.1, map: tex, vertexColors: true,
+      transparent: true, opacity: 0.38,
       depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true,
     })
     const pts2 = new THREE.Points(g2, m2)
     scene.add(pts2)
+
+    // ── Layer 3: large glowing orbs ───────────────────────
+    const N3   = 10
+    const p3   = new Float32Array(N3 * 3)
+    const c3   = new Float32Array(N3 * 3)
+    const spd3 = new Float32Array(N3)
+    const off3 = new Float32Array(N3)
+
+    for (let i = 0; i < N3; i++) {
+      p3[i*3]   = (Math.random() - 0.5) * 14
+      p3[i*3+1] = (Math.random() - 0.5) * 9
+      p3[i*3+2] = -5
+      c3[i*3] = 1; c3[i*3+1] = 1; c3[i*3+2] = 0.8
+      spd3[i] = Math.random() * 0.08 + 0.02
+      off3[i] = Math.random() * Math.PI * 2
+    }
+
+    const g3 = new THREE.BufferGeometry()
+    g3.setAttribute('position', new THREE.BufferAttribute(p3, 3))
+    g3.setAttribute('color',    new THREE.BufferAttribute(c3, 3))
+
+    const m3 = new THREE.PointsMaterial({
+      size: 2.8, map: tex, vertexColors: true,
+      transparent: true, opacity: 0.18,
+      depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true,
+    })
+    const pts3 = new THREE.Points(g3, m3)
+    scene.add(pts3)
 
     // ── Mouse parallax ────────────────────────────────────
     const mouse = { x: 0, y: 0 }
@@ -158,6 +188,14 @@ export default function HeroBackground() {
       }
       g2.attributes.position.needsUpdate = true
 
+      // Drift layer 3 (slowest, large glowing orbs)
+      for (let i = 0; i < N3; i++) {
+        p3[i*3+1] += spd3[i] * dt * 0.3
+        p3[i*3]   += Math.sin(elapsed * spd3[i] * 0.3 + off3[i]) * dt * 0.06
+        if (p3[i*3+1] > 6)  p3[i*3+1] = -6
+      }
+      g3.attributes.position.needsUpdate = true
+
       renderer.render(scene, camera)
     }
     tick()
@@ -175,8 +213,8 @@ export default function HeroBackground() {
       cancelAnimationFrame(raf)
       ro.disconnect()
       section?.removeEventListener('mousemove', onMove)
-      g1.dispose(); g2.dispose()
-      m1.dispose(); m2.dispose()
+      g1.dispose(); g2.dispose(); g3.dispose()
+      m1.dispose(); m2.dispose(); m3.dispose()
       tex.dispose()
       renderer.dispose()
       if (mount.contains(renderer.domElement)) mount.removeChild(renderer.domElement)

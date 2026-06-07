@@ -13,18 +13,21 @@ import styles from '@/styles/ui/Navbar.module.css'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 // idx matches snap position in page.js (0=video,1=hero,2=about,3-4=projects,5=work-exp,6=publications,7=footer)
+
+const N = profile.projects.length
+
 const NAV_ITEMS = [
   { label: 'Home',         idx: 0 },
   { label: 'About',        idx: 2 },
   { label: 'Work',         idx: 3 },
-  { label: 'Experience',   idx: 5 },
-  { label: 'Impact',       idx: 6 },
-  { label: 'Contact',      idx: 7 },
+  { label: 'Experience',   idx: 3 + N },
+  { label: 'Impact',       idx: 4 + N },
+  { label: 'Contact',      idx: 5 + N },
 ]
 
 function getIST() {
   return new Date().toLocaleTimeString('en-IN', {
-    timeZone: 'Asia/Singapore',
+    timeZone: 'Asia/Kolkata',
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
@@ -92,7 +95,7 @@ export default function Navbar() {
   return (
     <>
       <header ref={headerRef} className={`${styles.header} ${onIntro ? styles.introMode : ''} ${onDark ? styles.darkMode : ''}`}>
-        <span className={styles.time}>SINGAPORE TIME - {time}</span>
+        <span className={styles.time}>HYDERABAD TIME - {time}</span>
 
         <NavigationMenu className={styles.navMenu}>
           <NavigationMenuList className="flex gap-6">

@@ -27,48 +27,48 @@ const dancing = Dancing_Script({
 });
 
 const description =
-  'Control-M SME and production support specialist with 15+ years across enterprise workload automation, ITSM, RPA, and AI-assisted operations.';
+  'Full-Stack Developer and Founder of Orvix Labs. Building scalable web applications, automation systems, and AI-powered solutions for businesses and startups.';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Jyoti Sinha | Software Engineer',
-    template: '%s | Jyoti Sinha',
+    default: 'Harinadh Ayyapureddi | Full-Stack Developer',
+    template: '%s | Harinadh Ayyapureddi',
   },
   description,
   keywords: [
-    'Jyoti Sinha',
-    'Control-M SME',
-    'Control-M Administrator',
-    'Production Support',
-    'Application L3 Support',
-    'Agentic AI Automation',
-    'Batch Scheduling',
-    'ITIL',
-    'UiPath RPA',
-    'Singapore',
+    'Harinadh Ayyapureddi',
+    'Full-Stack Developer',
+    'React Developer',
+    'Node.js Developer',
+    'Firebase',
+    'AI Integration',
+    'Web Automation',
+    'Orvix Labs',
+    'Hyderabad',
+    'JavaScript Developer',
   ],
-  authors: [{ name: 'Jyoti Sinha', url: SITE_URL }],
-  creator: 'Jyoti Sinha',
+  authors: [{ name: 'Harinadh Ayyapureddi', url: SITE_URL }],
+  creator: 'Harinadh Ayyapureddi',
   openGraph: {
     type: 'website',
-    locale: 'en_SG',
+    locale: 'en_IN',
     url: SITE_URL,
-    siteName: 'Jyoti Sinha',
-    title: 'Jyoti Sinha | Control-M SME',
+    siteName: 'Harinadh Ayyapureddi',
+    title: 'Harinadh Ayyapureddi | Full-Stack Developer',
     description,
     images: [
       {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Jyoti Sinha | Control-M SME Portfolio',
+        alt: 'Harinadh Ayyapureddi | Full-Stack Developer Portfolio',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jyoti Sinha | Control-M SME',
+    title: 'Harinadh Ayyapureddi | Control-M SME',
     description,
     images: ['/opengraph-image'],
   },
@@ -117,7 +117,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
-              name: 'Jyoti Sinha',
+              name: 'Harinadh Ayyapureddi',
               url: SITE_URL,
               email: 'jyotisinha0526@gmail.com',
               jobTitle: 'Control-M SME',
