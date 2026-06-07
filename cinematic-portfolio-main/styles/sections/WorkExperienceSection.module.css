@@ -264,6 +264,12 @@
 
 /* ── Mobile (≤767px) ────────────────────────────── */
 @media (max-width: 767px) {
+  .section {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
   .header {
     padding: 3.5rem clamp(1rem, 4vw, 1.5rem) 0;
   }
@@ -273,8 +279,8 @@
     padding-top: 1.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    overflow-y: auto;
-    overflow-x: hidden;
+    padding-bottom: 3rem;
+    overflow: visible;
   }
 
   .snakeLine { display: none; }
